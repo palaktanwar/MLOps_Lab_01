@@ -1,4 +1,9 @@
 import pytest
+import sys
+import os
+
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+sys.path.append(project_root)
 from src.maths import findOddEven, findfibbonaci
 
 def test_fibbonaci():
